@@ -1,0 +1,12 @@
+# Normalise line endings so the project behaves the same on every platform.
+* text=auto eol=lf
+
+# Windows scripts keep CRLF.
+*.bat text eol=crlf
+
+# The Gradle wrapper script must stay LF to be executable on Unix.
+gradlew text eol=lf
+
+# Binary files must never be altered.
+*.jar binary
+*.png binary
