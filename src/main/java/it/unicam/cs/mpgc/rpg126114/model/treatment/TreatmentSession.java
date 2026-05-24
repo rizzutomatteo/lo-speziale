@@ -1,6 +1,7 @@
 package it.unicam.cs.mpgc.rpg126114.model.treatment;
 
 import it.unicam.cs.mpgc.rpg126114.model.ailment.Affliction;
+import it.unicam.cs.mpgc.rpg126114.model.ailment.Severity;
 import it.unicam.cs.mpgc.rpg126114.model.ailment.Symptom;
 import it.unicam.cs.mpgc.rpg126114.model.character.Apothecary;
 import it.unicam.cs.mpgc.rpg126114.model.character.Patient;
@@ -30,6 +31,9 @@ public final class TreatmentSession implements TreatmentContext {
     /** Turns of patience a patient grants before they give up on the treatment. */
     public static final int INITIAL_PATIENCE = 8;
 
+    /** Consecutive critical turns a body can endure before it gives out. */
+    public static final int CRITICAL_TURNS_BEFORE_DEATH = 3;
+
     private final Patient patient;
     private final Apothecary apothecary;
     private final RandomSource random;
@@ -38,6 +42,7 @@ public final class TreatmentSession implements TreatmentContext {
 
     private int patience = INITIAL_PATIENCE;
     private int turn;
+    private int criticalStreak;
     private boolean diagnosed;
     private TreatmentOutcome outcome = TreatmentOutcome.IN_CORSO;
 
@@ -81,10 +86,11 @@ public final class TreatmentSession implements TreatmentContext {
 
     private void evaluateOutcome() {
         Affliction affliction = getAffliction();
+        criticalStreak = affliction.getSeverity() == Severity.CRITICA ? criticalStreak + 1 : 0;
         if (affliction.isCured(CURE_TOLERANCE)) {
             outcome = TreatmentOutcome.GUARITO;
             journal.add(patient.getName() + " si è ristabilito. Hai avuto la meglio sul male.");
-        } else if (affliction.isFatal()) {
+        } else if (criticalStreak >= CRITICAL_TURNS_BEFORE_DEATH) {
             outcome = TreatmentOutcome.DECEDUTO;
             journal.add("Le forze abbandonano " + patient.getName() + ". Non c'era più nulla da fare.");
         } else if (patience <= 0) {

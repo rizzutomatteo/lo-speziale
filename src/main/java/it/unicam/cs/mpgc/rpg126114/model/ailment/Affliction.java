@@ -19,7 +19,6 @@ public final class Affliction {
 
     /** A symptom shows once its humor deviates from the ideal by at least this much. */
     private static final int SYMPTOM_THRESHOLD = 2;
-    private static final int DEATH_SCORE = 20;
     private static final int MAX_TOXICITY = 10;
     private static final int SAFE_TOXICITY = 2;
 
@@ -122,10 +121,6 @@ public final class Affliction {
      */
     public boolean isCured(int tolerance) {
         return isStable(tolerance) && activeSymptoms.isEmpty() && toxicity <= SAFE_TOXICITY;
-    }
-
-    public boolean isFatal() {
-        return gravityScore() >= DEATH_SCORE;
     }
 
     private void refreshSymptoms() {
