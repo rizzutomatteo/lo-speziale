@@ -1,0 +1,68 @@
+[
+  {
+    "id": "infuso_salice",
+    "name": "Infuso di Salice",
+    "description": "Tempera il calore del sangue.",
+    "effects": [{ "type": "humoral_shift", "humor": "SANGUE", "amount": -3 }]
+  },
+  {
+    "id": "tisana_camomilla",
+    "name": "Tisana di Camomilla",
+    "description": "Placa la collera e rasserena.",
+    "effects": [
+      { "type": "humoral_shift", "humor": "BILE_GIALLA", "amount": -3 }
+    ]
+  },
+  {
+    "id": "cataplasma_menta",
+    "name": "Cataplasma di Menta",
+    "description": "Scioglie la flemma del petto.",
+    "effects": [{ "type": "humoral_shift", "humor": "FLEMMA", "amount": -3 }]
+  },
+  {
+    "id": "decotto_genziana",
+    "name": "Decotto di Genziana",
+    "description": "Solleva lo spirito oppresso dalla bile nera.",
+    "effects": [{ "type": "humoral_shift", "humor": "BILE_NERA", "amount": -3 }]
+  },
+  {
+    "id": "polvere_carbone",
+    "name": "Polvere di Carbone",
+    "description": "Depura il corpo dai residui nocivi.",
+    "effects": [{ "type": "purify", "amount": 4 }]
+  },
+  {
+    "id": "tonico_zenzero",
+    "name": "Tonico di Zenzero",
+    "description": "Scaccia il freddo in fretta, ma scalda troppo l'organismo.",
+    "effects": [
+      { "type": "humoral_shift", "humor": "FLEMMA", "amount": -2 },
+      { "type": "toxicity", "amount": 1 }
+    ]
+  },
+  {
+    "id": "brodo_corroborante",
+    "name": "Brodo Corroborante",
+    "description": "Rinfranca il sangue affievolito.",
+    "effects": [{ "type": "humoral_shift", "humor": "SANGUE", "amount": 3 }]
+  },
+  {
+    "id": "sciroppo_miele",
+    "name": "Sciroppo di Miele e Ruta",
+    "description": "Rimedio dolce e blando, tempera la bile e deterge.",
+    "effects": [
+      { "type": "humoral_shift", "humor": "BILE_GIALLA", "amount": -2 },
+      { "type": "purify", "amount": 1 }
+    ]
+  },
+  {
+    "id": "elisir_argento",
+    "name": "Elisir d'Argento",
+    "description": "Possente contro la Moria: doma sangue e bile nera, ma lascia un residuo gravoso.",
+    "effects": [
+      { "type": "humoral_shift", "humor": "SANGUE", "amount": -3 },
+      { "type": "humoral_shift", "humor": "BILE_NERA", "amount": -3 },
+      { "type": "toxicity", "amount": 2 }
+    ]
+  }
+]

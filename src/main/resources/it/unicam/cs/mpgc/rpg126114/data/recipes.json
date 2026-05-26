@@ -1,0 +1,92 @@
+[
+  {
+    "id": "r_salice",
+    "name": "Infuso di Salice",
+    "description": "Si fa bollire la corteccia finché l'acqua si fa ambrata.",
+    "ingredients": { "salice": 2 },
+    "remedyId": "infuso_salice",
+    "requiredSkill": "DISTILLAZIONE",
+    "requiredLevel": 1,
+    "rewardExperience": 10
+  },
+  {
+    "id": "r_camomilla",
+    "name": "Tisana di Camomilla",
+    "description": "Fiori e miele lasciati in infusione a fuoco lento.",
+    "ingredients": { "camomilla": 2, "miele": 1 },
+    "remedyId": "tisana_camomilla",
+    "requiredSkill": "DISTILLAZIONE",
+    "requiredLevel": 1,
+    "rewardExperience": 10
+  },
+  {
+    "id": "r_menta",
+    "name": "Cataplasma di Menta",
+    "description": "Le foglie vengono pestate fino a ottenere un impiastro.",
+    "ingredients": { "menta": 2 },
+    "remedyId": "cataplasma_menta",
+    "requiredSkill": "DISTILLAZIONE",
+    "requiredLevel": 1,
+    "rewardExperience": 10
+  },
+  {
+    "id": "r_genziana",
+    "name": "Decotto di Genziana",
+    "description": "La radice si fa sobbollire a lungo con un poco di miele.",
+    "ingredients": { "genziana": 1, "miele": 1 },
+    "remedyId": "decotto_genziana",
+    "requiredSkill": "DISTILLAZIONE",
+    "requiredLevel": 2,
+    "rewardExperience": 14
+  },
+  {
+    "id": "r_carbone",
+    "name": "Polvere di Carbone",
+    "description": "Il carbone viene macinato finemente in un mortaio.",
+    "ingredients": { "carbone": 1 },
+    "remedyId": "polvere_carbone",
+    "requiredSkill": "DISTILLAZIONE",
+    "requiredLevel": 1,
+    "rewardExperience": 8
+  },
+  {
+    "id": "r_zenzero",
+    "name": "Tonico di Zenzero",
+    "description": "Radice grattugiata e scaldata con miele fino a sciogliersi.",
+    "ingredients": { "zenzero": 2, "miele": 1 },
+    "remedyId": "tonico_zenzero",
+    "requiredSkill": "DISTILLAZIONE",
+    "requiredLevel": 2,
+    "rewardExperience": 14
+  },
+  {
+    "id": "r_brodo",
+    "name": "Brodo Corroborante",
+    "description": "Radici fatte cuocere a lungo in un brodo denso e nutriente.",
+    "ingredients": { "radici_corroboranti": 2, "miele": 1 },
+    "remedyId": "brodo_corroborante",
+    "requiredSkill": "DISTILLAZIONE",
+    "requiredLevel": 2,
+    "rewardExperience": 14
+  },
+  {
+    "id": "r_sciroppo",
+    "name": "Sciroppo di Miele e Ruta",
+    "description": "Ruta e miele ridotti a uno sciroppo denso.",
+    "ingredients": { "miele": 1, "ruta": 1 },
+    "remedyId": "sciroppo_miele",
+    "requiredSkill": "DISTILLAZIONE",
+    "requiredLevel": 1,
+    "rewardExperience": 10
+  },
+  {
+    "id": "r_elisir",
+    "name": "Elisir d'Argento",
+    "description": "Preparazione difficile: l'argento va legato a salice e genziana con mano esperta.",
+    "ingredients": { "argento": 1, "salice": 1, "genziana": 1 },
+    "remedyId": "elisir_argento",
+    "requiredSkill": "DISTILLAZIONE",
+    "requiredLevel": 4,
+    "rewardExperience": 30
+  }
+]

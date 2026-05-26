@@ -1,0 +1,50 @@
+[
+  {
+    "id": "febbre_palustre",
+    "name": "Febbre Palustre",
+    "description": "Un male delle terre umide, che accende il sangue e spossa il corpo.",
+    "signature": { "SANGUE": 9 },
+    "symptomIds": ["febbre", "sudore"],
+    "virulence": 3
+  },
+  {
+    "id": "fuoco_collera",
+    "name": "Fuoco di Collera",
+    "description": "Un eccesso di bile gialla che infiamma l'animo e tinge la pelle.",
+    "signature": { "BILE_GIALLA": 9 },
+    "symptomIds": ["collera", "itterizia"],
+    "virulence": 3
+  },
+  {
+    "id": "flemmone",
+    "name": "Flemmone Gelido",
+    "description": "Un ristagno di flemma che intorpidisce il petto e smorza il respiro.",
+    "signature": { "FLEMMA": 9 },
+    "symptomIds": ["tosse", "pallore"],
+    "virulence": 2
+  },
+  {
+    "id": "atrabile",
+    "name": "Atrabile",
+    "description": "L'eccesso di bile nera che opprime lo spirito e appesantisce le membra.",
+    "signature": { "BILE_NERA": 8 },
+    "symptomIds": ["torpore", "malinconia"],
+    "virulence": 2
+  },
+  {
+    "id": "quartana",
+    "name": "Febbre Quartana",
+    "description": "Febbre intermittente che alterna calore del sangue e furori di bile.",
+    "signature": { "SANGUE": 8, "BILE_GIALLA": 7 },
+    "symptomIds": ["febbre", "collera"],
+    "virulence": 3
+  },
+  {
+    "id": "moria",
+    "name": "Moria Cinerea",
+    "description": "Il morbo che svuota i villaggi: sangue in tumulto e bile nera che dilaga.",
+    "signature": { "SANGUE": 9, "BILE_NERA": 9 },
+    "symptomIds": ["febbre", "torpore", "sudore", "malinconia"],
+    "virulence": 4
+  }
+]

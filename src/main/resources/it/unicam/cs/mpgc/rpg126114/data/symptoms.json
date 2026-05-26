@@ -1,0 +1,58 @@
+[
+  {
+    "id": "febbre",
+    "name": "Febbre",
+    "description": "Pelle ardente e occhi lucidi.",
+    "humor": "SANGUE",
+    "gravity": 3
+  },
+  {
+    "id": "sudore",
+    "name": "Sudore",
+    "description": "Sudore abbondante e freddo.",
+    "humor": "SANGUE",
+    "gravity": 2
+  },
+  {
+    "id": "collera",
+    "name": "Collera",
+    "description": "Scatti d'ira e irrequietezza.",
+    "humor": "BILE_GIALLA",
+    "gravity": 3
+  },
+  {
+    "id": "itterizia",
+    "name": "Itterizia",
+    "description": "Pelle e occhi tinti di giallo.",
+    "humor": "BILE_GIALLA",
+    "gravity": 2
+  },
+  {
+    "id": "tosse",
+    "name": "Tosse",
+    "description": "Tosse grassa e persistente.",
+    "humor": "FLEMMA",
+    "gravity": 2
+  },
+  {
+    "id": "pallore",
+    "name": "Pallore",
+    "description": "Carnagione spenta e smorta.",
+    "humor": "FLEMMA",
+    "gravity": 2
+  },
+  {
+    "id": "torpore",
+    "name": "Torpore",
+    "description": "Membra pesanti e svogliatezza.",
+    "humor": "BILE_NERA",
+    "gravity": 3
+  },
+  {
+    "id": "malinconia",
+    "name": "Malinconia",
+    "description": "Sguardo cupo e pensieri foschi.",
+    "humor": "BILE_NERA",
+    "gravity": 2
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "salice",
+    "name": "Corteccia di Salice",
+    "description": "Amara, abbassa il calore del sangue.",
+    "rarity": "COMUNE",
+    "price": 6,
+    "affinity": "SANGUE"
+  },
+  {
+    "id": "camomilla",
+    "name": "Fiori di Camomilla",
+    "description": "Dolce e calmante, placa la bile gialla.",
+    "rarity": "COMUNE",
+    "price": 5,
+    "affinity": "BILE_GIALLA"
+  },
+  {
+    "id": "menta",
+    "name": "Foglie di Menta",
+    "description": "Fresca e balsamica, scioglie la flemma.",
+    "rarity": "COMUNE",
+    "price": 5,
+    "affinity": "FLEMMA"
+  },
+  {
+    "id": "genziana",
+    "name": "Radice di Genziana",
+    "description": "Radice amara che desta gli spiriti sopiti.",
+    "rarity": "NON_COMUNE",
+    "price": 9,
+    "affinity": "BILE_NERA"
+  },
+  {
+    "id": "carbone",
+    "name": "Carbone Vegetale",
+    "description": "Assorbe i veleni e i residui nocivi.",
+    "rarity": "COMUNE",
+    "price": 4,
+    "affinity": null
+  },
+  {
+    "id": "miele",
+    "name": "Miele Selvatico",
+    "description": "Lega e addolcisce ogni preparato.",
+    "rarity": "COMUNE",
+    "price": 4,
+    "affinity": null
+  },
+  {
+    "id": "zenzero",
+    "name": "Radice di Zenzero",
+    "description": "Calda e pungente, scaccia il freddo.",
+    "rarity": "NON_COMUNE",
+    "price": 8,
+    "affinity": "FLEMMA"
+  },
+  {
+    "id": "ruta",
+    "name": "Ramoscelli di Ruta",
+    "description": "Erba amara dalle molte virtù.",
+    "rarity": "COMUNE",
+    "price": 5,
+    "affinity": "BILE_GIALLA"
+  },
+  {
+    "id": "argento",
+    "name": "Polvere d'Argento",
+    "description": "Rara e preziosa, combatte i mali oscuri.",
+    "rarity": "RARO",
+    "price": 18,
+    "affinity": null
+  },
+  {
+    "id": "radici_corroboranti",
+    "name": "Radici Corroboranti",
+    "description": "Nutrono il sangue e ridanno vigore.",
+    "rarity": "NON_COMUNE",
+    "price": 7,
+    "affinity": "SANGUE"
+  }
+]

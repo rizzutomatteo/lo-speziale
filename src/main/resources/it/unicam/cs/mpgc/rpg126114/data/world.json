@@ -1,0 +1,75 @@
+{
+  "regions": [
+    {
+      "id": "paludi",
+      "name": "Le Paludi di Lemo",
+      "description": "Terre basse e nebbiose, dove l'acqua ristagna e i miasmi salgono dai canneti."
+    },
+    {
+      "id": "alture",
+      "name": "Le Alture di Corvenia",
+      "description": "Colline ventose e pietrose, di aria secca e inverni rigidi."
+    }
+  ],
+  "villages": [
+    {
+      "id": "valmorigen",
+      "name": "Valmorigen",
+      "description": "Borgo di pescatori e raccoglitori d'erbe, all'orlo della palude.",
+      "regionId": "paludi",
+      "marketIngredients": ["salice", "camomilla", "menta", "miele", "carbone"],
+      "localAilments": ["febbre_palustre", "flemmone"]
+    },
+    {
+      "id": "fontechiara",
+      "name": "Fontechiara",
+      "description": "Paese di terme e sorgenti, rinomato per le sue acque salutari.",
+      "regionId": "alture",
+      "marketIngredients": [
+        "camomilla",
+        "menta",
+        "miele",
+        "radici_corroboranti"
+      ],
+      "localAilments": ["flemmone", "atrabile"]
+    },
+    {
+      "id": "pietrafonda",
+      "name": "Pietrafonda",
+      "description": "Cittadina mineraria arroccata sulle alture, dura come la sua pietra.",
+      "regionId": "alture",
+      "marketIngredients": ["genziana", "ruta", "zenzero", "miele"],
+      "localAilments": ["atrabile", "fuoco_collera"]
+    },
+    {
+      "id": "borgocenere",
+      "name": "Borgo Cenere",
+      "description": "Villaggio cupo e silenzioso, primo focolaio della Moria Cinerea.",
+      "regionId": "paludi",
+      "marketIngredients": [
+        "salice",
+        "carbone",
+        "argento",
+        "radici_corroboranti"
+      ],
+      "localAilments": ["moria", "febbre_palustre"]
+    },
+    {
+      "id": "valdoro",
+      "name": "Val d'Oro",
+      "description": "Florido mercato delle alture, crocevia di mercanti e speziali.",
+      "regionId": "alture",
+      "marketIngredients": ["genziana", "zenzero", "argento", "ruta"],
+      "localAilments": ["fuoco_collera", "quartana"]
+    }
+  ],
+  "routes": [
+    { "from": "valmorigen", "to": "fontechiara", "days": 2 },
+    { "from": "valmorigen", "to": "borgocenere", "days": 2 },
+    { "from": "fontechiara", "to": "pietrafonda", "days": 2 },
+    { "from": "fontechiara", "to": "valdoro", "days": 2 },
+    { "from": "pietrafonda", "to": "valdoro", "days": 2 },
+    { "from": "valdoro", "to": "borgocenere", "days": 3 },
+    { "from": "valmorigen", "to": "pietrafonda", "days": 3 }
+  ]
+}
