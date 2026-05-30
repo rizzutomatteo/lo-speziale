@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <BorderPane styleClass="screen">
+        <top>
+            <HBox alignment="CENTER_LEFT" spacing="12" styleClass="topbar">
+                <Label fx:id="patientHeader" styleClass="heading"/>
+                <Region HBox.hgrow="ALWAYS"/>
+                <Label fx:id="severityLabel" styleClass="badge"/>
+                <HBox styleClass="chip" alignment="CENTER">
+                    <Label fx:id="turnLabel" styleClass="chip-text"/>
+                </HBox>
+                <HBox styleClass="chip" alignment="CENTER">
+                    <Label fx:id="patienceLabel" styleClass="chip-text"/>
+                </HBox>
+            </HBox>
+        </top>
+        <center>
+            <HBox spacing="16" styleClass="content">
+                <VBox spacing="12" minWidth="400" HBox.hgrow="ALWAYS" styleClass="panel">
+                    <Label text="Quadro clinico" styleClass="subheading"/>
+                    <Label fx:id="diagnosisHint" styleClass="muted" wrapText="true"/>
+                    <VBox fx:id="humoursBox" spacing="9"/>
+                    <HBox fx:id="toxicityBox" alignment="CENTER_LEFT" spacing="10"/>
+                    <Label text="Sintomi" styleClass="subheading"/>
+                    <FlowPane fx:id="symptomsPane" hgap="8" vgap="8"/>
+                </VBox>
+                <VBox spacing="10" minWidth="270" maxWidth="300">
+                    <Label text="Cosa fai?" styleClass="subheading"/>
+                    <VBox fx:id="actionsBox" spacing="8"/>
+                    <Label text="Rimedi nella borsa" styleClass="subheading"/>
+                    <ScrollPane fitToWidth="true" VBox.vgrow="ALWAYS">
+                        <VBox fx:id="remediesBox" spacing="8"/>
+                    </ScrollPane>
+                </VBox>
+            </HBox>
+        </center>
+        <bottom>
+            <VBox spacing="6" styleClass="content">
+                <Label text="Diario della cura" styleClass="subheading"/>
+                <ListView fx:id="journalList" prefHeight="150" styleClass="journal"/>
+            </VBox>
+        </bottom>
+    </BorderPane>
+
+    <StackPane fx:id="outcomeOverlay" visible="false" styleClass="overlay">
+        <VBox alignment="CENTER" spacing="14" maxWidth="460" maxHeight="280" styleClass="menu-box">
+            <Label fx:id="outcomeTitle" styleClass="heading"/>
+            <Label fx:id="outcomeMessage" styleClass="subtitle" wrapText="true" textAlignment="CENTER"/>
+            <Button fx:id="continueButton" text="Continua" onAction="#onContinue" styleClass="primary-button"/>
+        </VBox>
+    </StackPane>
+</StackPane>

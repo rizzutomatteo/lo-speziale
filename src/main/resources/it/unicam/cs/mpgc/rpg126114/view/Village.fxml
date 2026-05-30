@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" styleClass="screen">
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="12" styleClass="topbar">
+            <Label fx:id="villageName" styleClass="heading"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <HBox styleClass="chip" alignment="CENTER">
+                <Label fx:id="dayLabel" styleClass="chip-text"/>
+            </HBox>
+            <HBox styleClass="chip" alignment="CENTER">
+                <Label fx:id="coinsLabel" styleClass="chip-text"/>
+            </HBox>
+            <HBox styleClass="chip" alignment="CENTER">
+                <Label fx:id="reputationLabel" styleClass="chip-text"/>
+            </HBox>
+        </HBox>
+    </top>
+    <center>
+        <VBox spacing="12" styleClass="content">
+            <Label fx:id="villageDescription" styleClass="subtitle" wrapText="true"/>
+            <Label text="Malati in attesa" styleClass="subheading"/>
+            <ScrollPane fitToWidth="true" VBox.vgrow="ALWAYS">
+                <VBox fx:id="patientsBox" spacing="12"/>
+            </ScrollPane>
+        </VBox>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER_LEFT" spacing="10" styleClass="actionbar">
+            <Button text="Laboratorio" onAction="#onWorkshop"/>
+            <Button text="Mercato" onAction="#onMarket"/>
+            <Button text="Viaggia" onAction="#onTravel"/>
+            <Button text="Salva" onAction="#onSave"/>
+            <Label fx:id="statusLabel" styleClass="muted"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button text="Menù" onAction="#onMenu" styleClass="ghost-button"/>
+        </HBox>
+    </bottom>
+</BorderPane>

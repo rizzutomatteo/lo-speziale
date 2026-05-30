@@ -1,0 +1,307 @@
+/* Lo Speziale — a warm "illuminated manuscript" theme. */
+
+.root {
+  -ink: #3a2b1b;
+  -ink-soft: #6f5b41;
+  -parchment-top: #f2e7c9;
+  -parchment-bottom: #e6d4a8;
+  -card: #fbf3dd;
+  -card-edge: #cdb583;
+  -accent: #5f7d44;
+  -accent-dark: #46602f;
+  -gold: #a9772a;
+  -danger: #9a3b2e;
+
+  -sangue: #b03636;
+  -flemma: #3d6f9c;
+  -bile-gialla: #c39a2b;
+  -bile-nera: #5b4769;
+
+  -fx-font-family: "SansSerif";
+  -fx-font-size: 14px;
+  -fx-background-color: linear-gradient(
+    to bottom,
+    -parchment-top,
+    -parchment-bottom
+  );
+}
+
+/* --- typography -------------------------------------------------------- */
+
+.title {
+  -fx-font-family: "Serif";
+  -fx-font-size: 48px;
+  -fx-font-weight: bold;
+  -fx-text-fill: -ink;
+}
+
+.heading {
+  -fx-font-family: "Serif";
+  -fx-font-size: 26px;
+  -fx-font-weight: bold;
+  -fx-text-fill: -ink;
+}
+
+.subheading {
+  -fx-font-family: "Serif";
+  -fx-font-size: 18px;
+  -fx-font-weight: bold;
+  -fx-text-fill: -ink;
+}
+
+.subtitle {
+  -fx-font-size: 15px;
+  -fx-text-fill: -ink-soft;
+  -fx-font-style: italic;
+}
+
+.text {
+  -fx-text-fill: -ink;
+}
+
+.muted {
+  -fx-text-fill: -ink-soft;
+}
+
+.emblem {
+  -fx-font-size: 70px;
+  -fx-text-fill: -gold;
+}
+
+/* --- layout ------------------------------------------------------------ */
+
+.screen {
+  -fx-padding: 26;
+}
+
+.menu-box {
+  -fx-padding: 40;
+  -fx-background-color: -card;
+  -fx-background-radius: 14;
+  -fx-border-color: -card-edge;
+  -fx-border-radius: 14;
+  -fx-border-width: 1.5;
+  -fx-effect: dropshadow(gaussian, rgba(60, 45, 25, 0.25), 24, 0.2, 0, 6);
+}
+
+.card {
+  -fx-background-color: -card;
+  -fx-background-radius: 10;
+  -fx-border-color: -card-edge;
+  -fx-border-radius: 10;
+  -fx-border-width: 1.2;
+  -fx-padding: 16;
+  -fx-effect: dropshadow(gaussian, rgba(60, 45, 25, 0.18), 12, 0.1, 0, 3);
+}
+
+.panel {
+  -fx-background-color: rgba(255, 250, 235, 0.55);
+  -fx-background-radius: 10;
+  -fx-border-color: -card-edge;
+  -fx-border-radius: 10;
+  -fx-border-width: 1;
+  -fx-padding: 14;
+}
+
+.divider {
+  -fx-border-color: -card-edge;
+  -fx-border-width: 0 0 1 0;
+}
+
+/* --- top bar ----------------------------------------------------------- */
+
+.topbar {
+  -fx-background-color: rgba(58, 43, 27, 0.92);
+  -fx-padding: 12 22 12 22;
+  -fx-background-radius: 10;
+}
+
+.topbar .text,
+.topbar .heading,
+.topbar .chip-text {
+  -fx-text-fill: #f3e7c8;
+}
+
+.chip {
+  -fx-background-color: rgba(255, 248, 230, 0.14);
+  -fx-background-radius: 20;
+  -fx-padding: 5 14 5 14;
+}
+
+.chip-text {
+  -fx-text-fill: #f3e7c8;
+  -fx-font-size: 13px;
+}
+
+/* --- buttons ----------------------------------------------------------- */
+
+.button {
+  -fx-font-size: 14px;
+  -fx-text-fill: -ink;
+  -fx-background-color: #efe2c0;
+  -fx-background-radius: 8;
+  -fx-border-color: -card-edge;
+  -fx-border-radius: 8;
+  -fx-border-width: 1.2;
+  -fx-padding: 9 18 9 18;
+  -fx-cursor: hand;
+}
+
+.button:hover {
+  -fx-background-color: #e7d6ac;
+}
+
+.primary-button {
+  -fx-text-fill: #f7efd9;
+  -fx-background-color: -accent;
+  -fx-border-color: -accent-dark;
+  -fx-font-weight: bold;
+}
+
+.primary-button:hover {
+  -fx-background-color: -accent-dark;
+}
+
+.danger-button {
+  -fx-text-fill: #f7efd9;
+  -fx-background-color: -danger;
+  -fx-border-color: derive(-danger, -20%);
+}
+
+.ghost-button {
+  -fx-background-color: transparent;
+  -fx-text-fill: -ink-soft;
+  -fx-border-color: transparent;
+}
+
+.ghost-button:hover {
+  -fx-background-color: rgba(120, 95, 60, 0.12);
+}
+
+.button:disabled {
+  -fx-opacity: 0.5;
+}
+
+/* --- humours and bars -------------------------------------------------- */
+
+.humour-track {
+  -fx-background-color: rgba(90, 70, 45, 0.18);
+  -fx-background-radius: 6;
+}
+
+.humour-name {
+  -fx-font-weight: bold;
+  -fx-text-fill: -ink;
+}
+
+.bar-sangue {
+  -fx-background-color: -sangue;
+  -fx-background-radius: 6;
+}
+.bar-flemma {
+  -fx-background-color: -flemma;
+  -fx-background-radius: 6;
+}
+.bar-bile-gialla {
+  -fx-background-color: -bile-gialla;
+  -fx-background-radius: 6;
+}
+.bar-bile-nera {
+  -fx-background-color: -bile-nera;
+  -fx-background-radius: 6;
+}
+.bar-ideal {
+  -fx-background-color: rgba(58, 43, 27, 0.45);
+}
+
+.toxicity-fill {
+  -fx-background-color: #7a8a3a;
+  -fx-background-radius: 6;
+}
+
+/* --- badges ------------------------------------------------------------ */
+
+.badge {
+  -fx-background-radius: 16;
+  -fx-padding: 4 12 4 12;
+  -fx-font-weight: bold;
+  -fx-text-fill: #f7efd9;
+}
+
+.badge-lieve {
+  -fx-background-color: #6f8f4f;
+}
+.badge-moderata {
+  -fx-background-color: #c0922f;
+}
+.badge-grave {
+  -fx-background-color: #c2662c;
+}
+.badge-critica {
+  -fx-background-color: #9a3b2e;
+}
+
+/* --- symptom and effect tags ------------------------------------------ */
+
+.tag {
+  -fx-background-color: rgba(120, 95, 60, 0.16);
+  -fx-background-radius: 14;
+  -fx-padding: 4 12 4 12;
+  -fx-text-fill: -ink;
+  -fx-font-size: 13px;
+}
+
+/* --- journal ----------------------------------------------------------- */
+
+.journal {
+  -fx-background-color: rgba(255, 252, 242, 0.7);
+  -fx-background-radius: 8;
+  -fx-border-color: -card-edge;
+  -fx-border-radius: 8;
+  -fx-border-width: 1;
+  -fx-font-family: "Serif";
+  -fx-font-size: 13.5px;
+  -fx-text-fill: -ink;
+}
+
+.list-view {
+  -fx-background-color: transparent;
+  -fx-background-insets: 0;
+}
+
+.list-view .list-cell {
+  -fx-background-color: transparent;
+  -fx-text-fill: -ink;
+  -fx-padding: 4 8 4 8;
+}
+
+/* --- text input -------------------------------------------------------- */
+
+.text-field {
+  -fx-background-color: #fffaf0;
+  -fx-background-radius: 8;
+  -fx-border-color: -card-edge;
+  -fx-border-radius: 8;
+  -fx-border-width: 1.2;
+  -fx-padding: 9 12 9 12;
+  -fx-font-size: 15px;
+}
+
+.scroll-pane,
+.scroll-pane .viewport {
+  -fx-background-color: transparent;
+}
+
+/* --- screen content and overlays --------------------------------------- */
+
+.content {
+  -fx-padding: 16 4 4 4;
+}
+
+.actionbar {
+  -fx-padding: 14 4 2 4;
+}
+
+.overlay {
+  -fx-background-color: rgba(40, 30, 18, 0.5);
+}
